@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    color: purple;
+}
+
+.item {
+    width: 25%;
+    height: 300px;
+    border: 2px solid red;
+    background: grey;
+}
+
+.block {
+    display: flex;
+}
+
+@media (max-width: 992px) {
+    .item {
+        width: 50%;
+    }
+
+    .block {
+        flex-wrap: wrap;
+    }
+
+    .title {
+        color: blue;
+    }
+}
+
+@media(max-width: 660px) {
+    .item {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .title {
+        color: red;
+        text-align: center;
+    }
+
+}

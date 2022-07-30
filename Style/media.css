@@ -1,0 +1,127 @@
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .main__films-items, .main__collections-items {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .main__films-item, .main__collections-item {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main__series-item:nth-of-type(1) {
+        min-height: 450px;
+    }
+
+    .main__series-img {
+        object-fit: cover;
+    }
+}
+
+@media (max-width:768px) {
+   .header__content {
+    height: 500px;
+   }
+
+   .header__content-img {
+    height: 100%;
+   }
+
+   .header__content-title {
+    font-size: 50px;
+    line-height: 50px;
+   }
+
+   .main__series-item:nth-of-type(2) {
+    grid-column: span 4;
+   }
+
+   .main__series-item {
+    grid-column: span 2;
+   }
+}
+
+@media (max-width: 576px) {
+    .header__nav-logo {
+        flex-wrap: wrap;
+    }
+
+    .header__nav-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header__nav-list {
+        margin-top: 10px;
+    }
+
+    .main__blackwidow-img {
+        width: 100%;
+    }
+
+    .header__content-title, .header__content-description {
+        text-align: center;
+    }
+
+    .header__content-buttons {
+        justify-content: center;
+    }
+
+    .footer__content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer__content-text {
+        margin-top: 15px;
+    }
+
+    .header__nav-link::after, .main__blackwidow-link::before {
+        display: none;
+    }
+
+    .header__content-title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main__series-item {
+        grid-column: span 4;
+    }
+
+    .main__series-item:nth-of-type(2) {
+        grid-row: span 2;
+    }
+}
+
+@media (max-width: 375px) {
+    .main__series-item:nth-of-type(1) .main__series-descriprtion, .main__series-item:nth-of-type(1) .main__series-link {
+        display: none;
+    }
+
+    .main__series-item:nth-of-type(1) .main__series-title {
+        font-size: 24px;
+        line-height: 27px;
+    }
+
+    .main__series-item:nth-of-type(1) .main__films-icon {
+        display: block;
+    }
+
+    .header__nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 10px;
+    }
+
+    .footer__content-text {
+        text-align: center;
+    }
+}
